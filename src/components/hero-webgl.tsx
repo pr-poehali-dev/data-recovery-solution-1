@@ -114,8 +114,8 @@ const Scene = () => {
 }
 
 export const Hero3DWebGL = () => {
-  const titleWords = "Synapse AI".split(" ")
-  const subtitle = "Нейроинтерфейсы нового поколения."
+  const titleWords = "GeoContent Publisher".split(" ")
+  const subtitle = "Автоматическая генерация и публикация GEO-статей на Habr, Dzen и VC.ru — чтобы вас цитировали ИИ-ассистенты."
   const [visibleWords, setVisibleWords] = useState(0)
   const [subtitleVisible, setSubtitleVisible] = useState(false)
   const [delays, setDelays] = useState<number[]>([])

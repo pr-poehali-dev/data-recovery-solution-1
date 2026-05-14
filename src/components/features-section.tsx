@@ -1,53 +1,55 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
+import Icon from "@/components/ui/icon"
+
 const features = [
   {
-    title: "Адаптивная нейрообработка",
-    description: "Самооптимизирующиеся алгоритмы, которые обучаются на нейронных паттернах и улучшают интерпретацию сигналов.",
-    icon: "brain",
-    badge: "ИИ",
+    title: "GEO-оптимизация статей",
+    description: "LLM генерирует статьи по GEO-принципам: прямой ответ в первом абзаце, FAQ-блок, структурированные данные — всё, чтобы вас цитировали ИИ-ассистенты.",
+    icon: "Sparkles",
+    badge: "AI",
   },
   {
-    title: "Медицинская защита",
-    description: "Шифрование по стандартам FDA со сквозной защитой конфиденциальных нейронных данных.",
-    icon: "lock",
-    badge: "Сертификат",
+    title: "GEO-рейтинг 0–100",
+    description: "Каждая статья автоматически оценивается по E-E-A-T критериям. Рейтинг ≥85 — публикация одобряется без участия редактора.",
+    icon: "BarChart3",
+    badge: "Авто",
   },
   {
-    title: "Интуитивное управление",
-    description: "Естественная трансляция мыслей в действия с откликом менее миллисекунды и точностью 99,7%.",
-    icon: "globe",
-    badge: "Точность",
+    title: "3 площадки одновременно",
+    description: "Habr, Дзен, VC.ru — адаптированный контент под стиль каждой платформы. Mock-режим для тестирования без реальных публикаций.",
+    icon: "Globe",
+    badge: "Мульти",
   },
   {
-    title: "Предиктивная калибровка",
-    description: "ML-модели, которые предугадывают намерения пользователя и оптимизируют нейронные пути.",
-    icon: "zap",
-    badge: "Умный",
+    title: "Очередь и планировщик",
+    description: "Redis-очередь с умным расписанием публикаций. Визуальный календарь, массовые операции, retry при ошибках до 5 попыток.",
+    icon: "CalendarClock",
+    badge: "Smart",
   },
   {
-    title: "Биометрическая интеграция",
-    description: "Бесшовная синхронизация с мониторингом жизненных показателей для контроля здоровья.",
-    icon: "link",
-    badge: "Связь",
+    title: "Веб-редактор",
+    description: "Markdown/WYSIWYG-редактор для правки статей на любом этапе. Статусы: draft → edited → approved → ready_to_publish.",
+    icon: "FileEdit",
+    badge: "Editor",
   },
   {
-    title: "Поддержка XR",
-    description: "Нативная совместимость с AR/VR-средами для терапевтических и рабочих приложений.",
-    icon: "target",
-    badge: "XR Ready",
+    title: "Дашборд GEO-метрик",
+    description: "Цитируемость, доля голоса, тональность — мониторинг того, как часто вас упоминают ChatGPT, Perplexity и другие LLM.",
+    icon: "TrendingUp",
+    badge: "Analytics",
   },
 ]
 
 export function FeaturesSection() {
   return (
-    <section className="py-24 px-6 bg-background">
+    <section id="features" className="py-24 px-6 bg-background">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Возможности нового поколения</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Всё для роста цитируемости в ИИ</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Почувствуйте будущее с технологиями, которые переопределяют возможное
+            GeoContent Publisher автоматизирует весь цикл: от задания до публикации на трёх площадках
           </p>
         </div>
 
@@ -60,14 +62,7 @@ export function FeaturesSection() {
             >
               <CardHeader>
                 <div className="flex items-center justify-between mb-2">
-                  <span className="text-3xl">
-                    {feature.icon === "brain" && "&#129504;"}
-                    {feature.icon === "lock" && "&#128274;"}
-                    {feature.icon === "globe" && "&#127760;"}
-                    {feature.icon === "zap" && "&#9889;"}
-                    {feature.icon === "link" && "&#128279;"}
-                    {feature.icon === "target" && "&#127919;"}
-                  </span>
+                  <Icon name={feature.icon} size={28} className="text-red-500" fallback="Star" />
                   <Badge variant="secondary" className="bg-accent text-accent-foreground">
                     {feature.badge}
                   </Badge>

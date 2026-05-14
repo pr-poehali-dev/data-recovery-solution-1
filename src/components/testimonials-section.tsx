@@ -3,25 +3,25 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 const testimonials = [
   {
-    name: "Елена Родригес",
-    role: "Директор по нейронауке, Quantum Dynamics",
-    avatar: "/professional-woman-scientist.png",
-    content:
-      "SynapseAI изменил наш подход к нейрореабилитации. Результаты пациентов улучшились на 340% после внедрения.",
-  },
-  {
-    name: "Маркус Уильямс",
-    role: "Руководитель исследований, Stellar Analytics",
+    name: "Алексей Воронов",
+    role: "Head of Marketing, TechScale",
     avatar: "/cybersecurity-expert-man.jpg",
     content:
-      "Точность и протоколы безопасности не имеют аналогов. Мы значительно ускорили клинические испытания с платформой SynapseAI.",
+      "Через месяц после старта Perplexity начал цитировать наши статьи в 3 из 5 запросов по нашей нише. GEO-рейтинг у большинства статей — выше 88.",
   },
   {
-    name: "Анна Ковальски",
-    role: "Вице-президент по разработке, Nova Industries",
+    name: "Марина Соколова",
+    role: "Контент-директор, B2B SaaS платформа",
+    avatar: "/professional-woman-scientist.png",
+    content:
+      "Раньше мы тратили 3 дня на одну статью. Теперь от задания до публикации на Хабре — 40 минут. И качество выше, чем у людей.",
+  },
+  {
+    name: "Дмитрий Ли",
+    role: "CMO, e-commerce холдинг",
     avatar: "/asian-woman-tech-developer.jpg",
     content:
-      "Интеграция прошла безупречно. Адаптивные алгоритмы понимают намерения пользователя лучше любой системы, что мы тестировали.",
+      "ChatGPT и Claude стали упоминать наш бренд в ответах на вопросы о продукте. Это совершенно новый канал трафика, которого раньше не существовало.",
   },
 ]
 
@@ -30,9 +30,9 @@ export function TestimonialsSection() {
     <section className="py-24 px-6 bg-card">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-card-foreground mb-4 font-sans">Нам доверяют лидеры</h2>
+          <h2 className="text-4xl font-bold text-card-foreground mb-4 font-sans">Результаты клиентов</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Что говорят лидеры индустрии о нашей революционной технологии
+            Бренды, которые уже получают трафик из ответов ChatGPT, Perplexity и Claude
           </p>
         </div>
 
