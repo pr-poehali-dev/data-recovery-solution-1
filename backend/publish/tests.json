@@ -1,0 +1,6 @@
+{
+  "tests": [
+    {"name": "Publish no auth", "method": "POST", "path": "/publish", "body": {}, "expectedStatus": 401, "expectedBody": {"error": "Unauthorized"}, "bodyMatcher": "partial"},
+    {"name": "Get logs no auth", "method": "GET", "path": "/logs", "expectedStatus": 401, "expectedBody": {"error": "Unauthorized"}, "bodyMatcher": "partial"}
+  ]
+}

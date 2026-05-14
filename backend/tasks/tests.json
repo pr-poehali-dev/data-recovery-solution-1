@@ -1,0 +1,5 @@
+{
+  "tests": [
+    {"name": "List tasks no auth", "method": "GET", "path": "/", "expectedStatus": 401, "expectedBody": {"error": "Unauthorized"}, "bodyMatcher": "partial"}
+  ]
+}

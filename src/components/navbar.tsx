@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import Icon from "@/components/ui/icon"
+import { Link } from "react-router-dom"
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -34,8 +35,11 @@ export function Navbar() {
             </div>
           </div>
 
-          {/* CTA Button */}
-          <div className="hidden md:block">
+          {/* CTA Buttons */}
+          <div className="hidden md:flex items-center gap-2">
+            <Link to="/app/dashboard">
+              <Button variant="ghost" className="text-zinc-400 hover:text-white border-0 text-sm">Войти</Button>
+            </Link>
             <Button className="bg-red-500 hover:bg-red-600 text-white font-geist border-0">Попробовать бесплатно</Button>
           </div>
 

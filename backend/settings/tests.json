@@ -1,0 +1,6 @@
+{
+  "tests": [
+    {"name": "Dashboard no auth", "method": "GET", "path": "/dashboard", "expectedStatus": 401, "expectedBody": {"error": "Unauthorized"}, "bodyMatcher": "partial"},
+    {"name": "Platforms no auth", "method": "GET", "path": "/platforms", "expectedStatus": 401, "expectedBody": {"error": "Unauthorized"}, "bodyMatcher": "partial"}
+  ]
+}

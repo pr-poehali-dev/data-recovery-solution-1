@@ -1,0 +1,7 @@
+{
+  "tests": [
+    {"name": "Login admin", "method": "POST", "path": "/login", "body": {"email": "admin@example.com", "password": "admin"}, "expectedStatus": 200, "expectedBody": {"token_type": "bearer"}, "bodyMatcher": "partial"},
+    {"name": "Login bad password", "method": "POST", "path": "/login", "body": {"email": "admin@example.com", "password": "wrong"}, "expectedStatus": 401, "expectedBody": {"error": "Invalid credentials"}, "bodyMatcher": "partial"},
+    {"name": "Me without token", "method": "GET", "path": "/me", "expectedStatus": 401, "expectedBody": {"error": "Unauthorized"}, "bodyMatcher": "partial"}
+  ]
+}
