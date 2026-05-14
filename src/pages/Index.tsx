@@ -1,10 +1,10 @@
 import { Hero3DWebGL as Hero3D } from "@/components/hero-webgl"
+import { StatsSection } from "@/components/stats-section"
 import { FeaturesSection } from "@/components/features-section"
-import { TechnologySection } from "@/components/technology-section"
+import { GeoVsSeoSection } from "@/components/geo-vs-seo-section"
 import { ApplicationsTimeline } from "@/components/applications-timeline"
-import { AboutSection } from "@/components/about-section"
-import { SafetySection } from "@/components/safety-section"
 import { TestimonialsSection } from "@/components/testimonials-section"
+import { WaitlistSection } from "@/components/waitlist-section"
 import { FAQSection } from "@/components/faq-section"
 import { CTASection } from "@/components/cta-section"
 import { Navbar } from "@/components/navbar"
@@ -16,16 +16,12 @@ export default function Index() {
       <Navbar />
       <main>
         <Hero3D />
+        <StatsSection />
         <FeaturesSection />
-        <section id="technology">
-          <TechnologySection />
-        </section>
+        <GeoVsSeoSection />
         <ApplicationsTimeline />
-        <AboutSection />
-        <section id="safety">
-          <SafetySection />
-        </section>
         <TestimonialsSection />
+        <WaitlistSection />
         <section id="faq">
           <FAQSection />
         </section>
